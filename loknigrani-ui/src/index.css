@@ -1,0 +1,6 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-navy text-slate-200 font-sans; margin: 0; }
+.leaflet-container { background: #0B1730; border-radius: 0.75rem; }
+#root { background: #0B1730; min-height: 100vh; }
+html.light #root { filter: invert(1) hue-rotate(180deg); }
+html.light .leaflet-container, html.light img { filter: invert(1) hue-rotate(180deg); }
